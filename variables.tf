@@ -72,7 +72,7 @@ InstanceType must be one of the following types:
 }
 
 variable "SleepDelay" {
-	default = "7m"
+	default = "3m"
 	description = "Time duration to delay to allow application to perform internal initialization required before use"
 	type = string
 }
