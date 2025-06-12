@@ -25,11 +25,5 @@ locals {
 	UserLoginTag = var.UserLoginTag
 	UserProjectTag = var.UserProjectTag
 	Version = var.Version
-}
-
-locals {
-	init_cli = <<-EOF
-#!/bin/bash -xe
-systemctl status amazon-ssm-agent
-    EOF
+	init_cli = var.init_cli
 }
