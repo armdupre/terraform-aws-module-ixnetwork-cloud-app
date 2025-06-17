@@ -4,6 +4,14 @@ locals {
 	Eth0Name = "${local.Preamble}-eth0-${local.Region}"
 	Eth0SecurityGroupId = var.Eth0SecurityGroupId
 	Eth0SubnetId = var.Eth0SubnetId
+	Eth1Name = "${local.Preamble}-eth1-${local.Region}"
+	Eth1PrivateIpAddresses = var.Eth1PrivateIpAddresses
+	Eth1SecurityGroupId = var.Eth1SecurityGroupId
+	Eth1SubnetId = var.Eth1SubnetId
+	Eth2Name = "${local.Preamble}-eth2-${local.Region}"
+	Eth2PrivateIpAddresses = var.Eth2PrivateIpAddresses
+	Eth2SecurityGroupId = var.Eth2SecurityGroupId
+	Eth2SubnetId = var.Eth2SubnetId
 	IamInstanceProfileName = "${local.Preamble}-iam-instance-profile-${local.Region}"
 	IamPolicyName = "${local.Preamble}-iam-policy-${local.Region}"
 	IamRoleName = "${local.Preamble}-iam-role-${local.Region}"

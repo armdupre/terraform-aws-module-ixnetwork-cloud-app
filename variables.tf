@@ -20,6 +20,38 @@ variable "Eth0SubnetId" {
 	type = string
 }
 
+variable "Eth1PrivateIpAddresses" {
+	default = [ "10.0.2.12", "10.0.2.13", "10.0.2.14", "10.0.2.15", "10.0.2.16", "10.0.2.17", "10.0.2.18", "10.0.2.19", "10.0.2.20", "10.0.2.21" ]
+	description = "List of IP addresses associated with the second network interface"
+	type = list(string)
+}
+
+variable "Eth1SecurityGroupId" {
+	description = "Id of the security group associated with second network interface"
+	type = string
+}
+
+variable "Eth1SubnetId" {
+	description = "Id of the subnet associated with the second network interface"
+	type = string
+}
+
+variable "Eth2PrivateIpAddresses" {
+	default = [ "10.0.3.12", "10.0.3.13", "10.0.3.14", "10.0.3.15", "10.0.2.16", "10.0.3.17", "10.0.3.18", "10.0.3.19", "10.0.3.20", "10.0.3.21" ]
+	description = "List of IP addresses associated with the third network interface"
+	type = list(string)
+}
+
+variable "Eth2SecurityGroupId" {
+	description = "Id of the security group associated with third network interface"
+	type = string
+}
+
+variable "Eth2SubnetId" {
+	description = "Id of the subnet associated with the third network interface"
+	type = string
+}
+
 variable "InstanceId" {
 	default = "app"
 	description = "Id of the instance of this module that ensures uniqueness"
